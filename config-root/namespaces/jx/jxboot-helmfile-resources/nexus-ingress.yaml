@@ -19,4 +19,4 @@ spec:
                 name: nexus
                 port:
                   number: 80
-      host: nexus-jx.change.me
+      host: nexus-jx.a1691f593e3932a7324c8263a5394a9a.gr7.us-east-2.eks.amazonaws.com

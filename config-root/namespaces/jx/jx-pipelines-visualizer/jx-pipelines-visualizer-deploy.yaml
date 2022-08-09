@@ -43,7 +43,7 @@ spec:
             - -archived-pipelineruns-url-template
             - s3://logs-automation-mgmt-eks-20220809153643793100000007/jenkins-x/pipelineruns/{{.Namespace}}/{{.Name}}.yaml
             - -pipeline-trace-url-template
-            - http://grafana-jx-observability.change.me/explore?left=%5B%22now%22,%22now%22,%22Tempo%22,%7B%22query%22:%22{{.TraceID}}%22%7D%5D
+            - http://grafana-jx-observability.a1691f593e3932a7324c8263a5394a9a.gr7.us-east-2.eks.amazonaws.com/explore?left=%5B%22now%22,%22now%22,%22Tempo%22,%7B%22query%22:%22{{.TraceID}}%22%7D%5D
             - -log-level
             - INFO
           env:
