@@ -1,0 +1,41 @@
+# Source: jxboot-helmfile-resources/templates/environments.yaml
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  labels:
+    env: "dev"
+    team: jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: "dev"
+  annotations:
+    meta.helm.sh/release-name: 'jxboot-helmfile-resources'
+  namespace: jx
+spec:
+  source:
+    ref: "master"
+    url: https://github.com/Morgan-and-Adam-will-figure-this-out/jx-asm-cluster-repo.git
+  kind: Development
+  label: Development
+  namespace: jx
+  promotionStrategy: "Never"
+  webHookEngine: "Lighthouse"
+  teamSettings:
+    appsRepository: https://jenkins-x-charts.github.io/repo
+    defaultScheduler:
+      apiVersion: jenkins.io/v1
+      kind: Scheduler
+      name: jx-meta-pipeline
+    dockerRegistryOrg: ""
+    envOrganisation: todo
+    gitServer: https://github.com
+    kubeProvider: "eks"
+    pipelineUsername: "jenkinsxbotmo"
+    pipelineUserEmail: "jenkins-x@googlegroups.com"
+    prowConfig: Scheduler
+    storageLocations:
+      - bucketUrl: "s3://logs-automation-mgmt-eks-20220809153643793100000007"
+        classifier: "logs"
+      - bucketUrl: "s3://reports-automation-mgmt-eks-20220809153643792900000006"
+        classifier: "reports"
+      - bucketUrl: "s3://repository-automation-mgmt-eks-20220809153643796600000008"
+        classifier: "repository"
