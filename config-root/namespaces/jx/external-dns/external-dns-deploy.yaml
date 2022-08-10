@@ -57,7 +57,7 @@ spec:
             - --metrics-address=:7979
             - --log-level=info
             - --log-format=text
-            - --domain-filter=netsmartdev.com
+            - --domain-filter=jenkinsx.netsmartdev.com
             - --policy=sync
             - --provider=aws
             - --registry=txt

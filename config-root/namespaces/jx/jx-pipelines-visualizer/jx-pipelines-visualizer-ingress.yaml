@@ -19,7 +19,7 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: dashboard-jx.netsmartdev.com
+    - host: dashboard-jx.jenkinsx.netsmartdev.com
       http:
         paths:
           - pathType: ImplementationSpecific
