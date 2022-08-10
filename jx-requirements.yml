@@ -24,7 +24,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: a6d602afe77ae4e93866071899bd2e25-8ff6880d86922df3.elb.us-east-2.amazonaws.com
+    domain: kube.netsmartdev.com
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
