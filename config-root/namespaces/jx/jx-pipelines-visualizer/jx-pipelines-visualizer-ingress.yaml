@@ -19,7 +19,7 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: dashboard-jx.kube.mymissing.link
+    - host: dashboard-jx.kube.netsmartdev.com
       http:
         paths:
           - pathType: ImplementationSpecific

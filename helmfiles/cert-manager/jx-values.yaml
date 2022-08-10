@@ -39,7 +39,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: kube.mymissing.link
+    domain: kube.netsmartdev.com
     kind: ingress
     namespaceSubDomain: -cert-manager.
     tls:
