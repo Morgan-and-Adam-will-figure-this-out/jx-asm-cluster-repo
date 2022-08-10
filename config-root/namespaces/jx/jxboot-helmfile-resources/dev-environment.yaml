@@ -33,9 +33,9 @@ spec:
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler
     storageLocations:
-      - bucketUrl: "s3://logs-automation-mgmt-eks-20220810212217385900000004"
+      - bucketUrl: "s3://logs-automation-mgmt-eks-20220810213245037600000004"
         classifier: "logs"
-      - bucketUrl: "s3://reports-automation-mgmt-eks-20220810212217416500000005"
+      - bucketUrl: "s3://reports-automation-mgmt-eks-20220810213245075600000007"
         classifier: "reports"
-      - bucketUrl: "s3://repository-automation-mgmt-eks-20220810212217373800000002"
+      - bucketUrl: "s3://repository-automation-mgmt-eks-20220810213245058200000006"
         classifier: "repository"

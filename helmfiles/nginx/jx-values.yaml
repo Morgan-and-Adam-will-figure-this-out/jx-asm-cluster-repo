@@ -39,7 +39,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: jenkinsx.netsmartdev.com
+    domain: netsmartdev.com
     externalDNS: true
     kind: ingress
     namespaceSubDomain: -nginx.
@@ -53,11 +53,11 @@ jxRequirements:
   secretStorage: secretsManager
   storage:
   - name: logs
-    url: s3://logs-automation-mgmt-eks-20220810212217385900000004
+    url: s3://logs-automation-mgmt-eks-20220810213245037600000004
   - name: reports
-    url: s3://reports-automation-mgmt-eks-20220810212217416500000005
+    url: s3://reports-automation-mgmt-eks-20220810213245075600000007
   - name: repository
-    url: s3://repository-automation-mgmt-eks-20220810212217373800000002
+    url: s3://repository-automation-mgmt-eks-20220810213245058200000006
   terraform: true
   vault: {}
   webhook: lighthouse
