@@ -24,7 +24,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: netsmartdev.com
+    domain: jenkinsx.netsmartdev.com
     externalDNS: true
     kind: ingress
     namespaceSubDomain: -jx.
