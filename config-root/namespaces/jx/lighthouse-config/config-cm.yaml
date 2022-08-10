@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - Morgan-and-Adam-will-figure-this-out/jx-asm-cluster-repo
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.kube.mymissing.link/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
