@@ -24,7 +24,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: kube.netsmartdev.com
+    domain: jenkinsx.netsmartdev.com
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
