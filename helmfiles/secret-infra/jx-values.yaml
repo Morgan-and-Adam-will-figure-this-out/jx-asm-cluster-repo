@@ -39,7 +39,8 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: kube.netsmartdev.com
+    domain: netsmartdev.com
+    externalDNS: true
     kind: ingress
     namespaceSubDomain: -secret-infra.
     tls:
@@ -52,16 +53,16 @@ jxRequirements:
   secretStorage: secretsManager
   storage:
   - name: logs
-    url: s3://logs-automation-mgmt-eks-20220809153643793100000007
+    url: s3://logs-automation-mgmt-eks-20220810211105315000000005
   - name: reports
-    url: s3://reports-automation-mgmt-eks-20220809153643792900000006
+    url: s3://reports-automation-mgmt-eks-20220810211105268200000003
   - name: repository
-    url: s3://repository-automation-mgmt-eks-20220809153643796600000008
+    url: s3://repository-automation-mgmt-eks-20220810211106440000000007
   terraform: true
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
-  enabled: false
+  enabled: true
 jxRequirementsIngressTLS:
   enabled: false
 jxRequirementsKuberhealthy:
