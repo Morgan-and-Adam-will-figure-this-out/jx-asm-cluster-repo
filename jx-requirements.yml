@@ -24,7 +24,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: "kube.mymissing.link"
+    domain: kube.mymissing.link
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
