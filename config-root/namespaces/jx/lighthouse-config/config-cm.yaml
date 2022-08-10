@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         Morgan-and-Adam-will-figure-this-out/jx-asm-cluster-repo: true
+        Morgan-and-Adam-will-figure-this-out/testing-jx: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         Morgan-and-Adam-will-figure-this-out/jx-asm-cluster-repo: merge
+        Morgan-and-Adam-will-figure-this-out/testing-jx: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - Morgan-and-Adam-will-figure-this-out/jx-asm-cluster-repo
+        - Morgan-and-Adam-will-figure-this-out/testing-jx
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - Morgan-and-Adam-will-figure-this-out/jx-asm-cluster-repo
+        - Morgan-and-Adam-will-figure-this-out/testing-jx
       target_url: http://lighthouse-jx.netsmartdev.com/merge/status
 kind: ConfigMap
 metadata:

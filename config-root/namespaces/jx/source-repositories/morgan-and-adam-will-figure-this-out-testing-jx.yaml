@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: Morgan-and-Adam-will-figure-this-out
+    provider: github
+    repository: testing-jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: morgan-and-adam-will-figure-this-out-testing-jx
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/Morgan-and-Adam-will-figure-this-out/testing-jx.git
+  org: Morgan-and-Adam-will-figure-this-out
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: testing-jx
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/Morgan-and-Adam-will-figure-this-out/testing-jx
